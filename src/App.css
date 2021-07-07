@@ -1,38 +1,122 @@
-.App {
-  text-align: center;
+.header {
+  width: 100%;
+  height: 69px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid seashell;
+  margin-bottom: 0px;
+  position: fixed;
+  top: 0px;
+  z-index: 2;
+  background-color: black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header img {
+  height: 50px;
+  margin-left: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header .nav p {
+  display: inline-block;
+  text-decoration: underline;
+  padding: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header .nav p a {
+  color: seashell;
+}
+
+.main {
+  position: relative;
+  top: 70px;
+}
+
+.mission {
+  display: flex;
+  background-image: url("./assets/images/img-mission-background.jpg");
+  flex-direction: column;
+  justify-content: center;
+  height: 700px;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.mission .text {
+  background-color: black;
+}
+
+.mission .text h2 {
+  width: 100%;
+}
+.mission .text h4 {
+  width: 100%;
+}
+
+.month {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.month .item {
+  margin-right: 25px;
+  margin-left: 25px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.month .item img {
+  height: 200px;
+  width: 300px;
+  margin-bottom: 10px;
+}
+
+.locations {
+  height: 500px;
+  width: 1200px;
+  background-image: url("./assets/images/img-locations-background.jpg");
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+}
+.locations h2 {
+  padding-top: 80px;
+  padding-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.locations .location {
+  display: flex;
+  width: 100%;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.locations .location .place {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  width: 300px;
+  background-color: black;
+  margin: 0 20px;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 200px;
+}
+.footer h2 {
+  margin-top: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#copyright {
+  float: left;
+  margin-left: 20px;
 }

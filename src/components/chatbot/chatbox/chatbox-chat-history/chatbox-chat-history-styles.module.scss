@@ -1,0 +1,28 @@
+.chat_history {
+  height: 80%;
+  width: 100%;
+  padding: 0 2%;
+  background-color: white;
+  position: absolute;
+  bottom: 10%;
+  left: 0%;
+  overflow: scroll;
+}
+
+.user_chat {
+  background-color: #1b8fd2;
+  color: white;
+  margin: 5px 0;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 24px;
+  border-bottom-right-radius: 0;
+}
+
+.bot_chat {
+  background-color: #93c4e0;
+  color: black;
+  font-size: 16px;
+  border-radius: 24px;
+  border-bottom-left-radius: 0;
+}

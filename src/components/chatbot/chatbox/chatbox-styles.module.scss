@@ -1,0 +1,15 @@
+.chatbox {
+  height: 640px;
+  width: 410px;
+  overflow: clip;
+  box-sizing: border-box;
+  background-color: white;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  position: fixed;
+  right: 10px;
+  z-index: 10;
+  bottom: 14%;
+}

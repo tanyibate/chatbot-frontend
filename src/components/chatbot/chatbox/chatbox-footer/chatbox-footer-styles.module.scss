@@ -1,0 +1,27 @@
+.chatbox_footer {
+  height: 10%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-top: 2px solid gainsboro;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5px;
+  input {
+    width: 80%;
+    padding: 0 10px;
+    height: 44px;
+    border-radius: 22px;
+    border: 1px solid gainsboro;
+    &:focus {
+      outline-width: 0;
+    }
+  }
+  img {
+    height: 70%;
+    cursor: pointer;
+  }
+}
