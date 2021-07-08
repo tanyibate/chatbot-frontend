@@ -26,6 +26,7 @@ function App() {
               onClick={() => {
                 setModal(true);
               }}
+              style={{ cursor: "pointer" }}
             >
               Log In
             </a>
