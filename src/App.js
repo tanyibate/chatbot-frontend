@@ -1,10 +1,14 @@
 import logo from "./logo.svg";
 import ChatBot from "./components/chatbot/ChatBot";
+import LoginModal from "./components/login-modal/LoginModal";
 import "./App.css";
+import React, { useState } from "react";
 
 function App() {
+  const [modal, setModal] = useState(false);
   return (
     <div className="App">
+      {modal && <LoginModal setModal={setModal} />}
       <div className="header">
         <img src="images/img-tea-cozy-logo.png" alt="" />
         <div className="nav">
@@ -16,6 +20,15 @@ function App() {
           </p>
           <p>
             <a href="#location">Locations</a>
+          </p>
+          <p>
+            <a
+              onClick={() => {
+                setModal(true);
+              }}
+            >
+              Log In
+            </a>
           </p>
         </div>
       </div>

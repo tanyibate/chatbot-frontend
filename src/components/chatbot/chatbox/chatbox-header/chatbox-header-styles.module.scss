@@ -29,3 +29,11 @@
     cursor: pointer;
   }
 }
+
+.chatbox_header_text {
+  display: flex;
+  align-items: center;
+  p {
+    font-style: italic;
+  }
+}

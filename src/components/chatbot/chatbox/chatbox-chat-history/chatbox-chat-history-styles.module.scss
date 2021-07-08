@@ -1,12 +1,14 @@
 .chat_history {
   height: 80%;
   width: 100%;
-  padding: 0 2%;
+  padding: 2% 2% 7% 2%;
   background-color: white;
   position: absolute;
   bottom: 10%;
   left: 0%;
   overflow: scroll;
+  display: flex;
+  flex-direction: column;
 }
 
 .user_chat {
@@ -15,14 +17,33 @@
   margin: 5px 0;
   padding: 10px;
   font-size: 16px;
+  display: inline-block;
+  max-width: 80%;
+  align-self: flex-end;
   border-radius: 24px;
   border-bottom-right-radius: 0;
+}
+
+.bot_chat_container {
+  display: flex;
+  align-self: flex-start;
+  margin: 5px 0;
+
+  align-items: flex-end;
+  img {
+    height: 32px;
+    margin-right: 5px;
+  }
 }
 
 .bot_chat {
   background-color: #93c4e0;
   color: black;
+  max-width: 80%;
+
   font-size: 16px;
   border-radius: 24px;
   border-bottom-left-radius: 0;
+  padding: 10px;
+  display: inline-block;
 }
