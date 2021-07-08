@@ -10,7 +10,7 @@ https://github.com/tanyibate/chatbot-backend.git
 ## Running the app
 
 npm install
-npm start
+npm run start
 
 ## Using the app
 
