@@ -9,12 +9,8 @@ import cx from "classnames";
 export default function ChatBox({ chatBotActive }) {
   const [chatHistory, setChatHistory] = useState([
     {
-      type: "user",
-      message: "hello",
-    },
-    {
-      type: "bot",
-      message: "hello",
+      type: "Bot",
+      message: "Hello, please let us know of any queries you may have.",
     },
   ]);
   const [isTyping, setIsTyping] = useState(false);
