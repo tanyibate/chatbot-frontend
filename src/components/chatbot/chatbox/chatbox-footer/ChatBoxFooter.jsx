@@ -11,16 +11,18 @@ export default function ChatBoxFooter(props) {
       add new message to chat history by concating it to current message history
       then setting new chat History state
     */
-    let oldHistory = props.chatHistory;
-    console.log(oldHistory);
-    let newHistory = oldHistory.concat([
-      {
-        type: "user",
-        message: newMessage,
-      },
-    ]);
-    props.setChatHistory(newHistory);
-    setNewMessage("");
+    if (newMessage) {
+      let oldHistory = props.chatHistory;
+      console.log(oldHistory);
+      let newHistory = oldHistory.concat([
+        {
+          type: "user",
+          message: newMessage,
+        },
+      ]);
+      props.setChatHistory(newHistory);
+      setNewMessage("");
+    }
   }
 
   function submit() {
