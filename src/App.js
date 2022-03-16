@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import ChatBot from "./components/chatbot/ChatBot";
 import LoginModal from "./components/login-modal/LoginModal";
 import "./App.css";
@@ -27,6 +26,7 @@ function App() {
                 setModal(true);
               }}
               style={{ cursor: "pointer" }}
+              href="#"
             >
               Log In
             </a>

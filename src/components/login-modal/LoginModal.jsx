@@ -6,8 +6,8 @@ export default function LoginModal({ setModal }) {
   const [register, setRegister] = useState(false);
   const [password, setPassword] = useState("");
 
-  const authenticationAPI = "http://localhost:4000/login";
-  const registerAPI = "http://localhost:4000/register";
+  const authenticationAPI = `${process.env.REACT_APP_BACKEND_API_URL}/login`;
+  const registerAPI = `${process.env.REACT_APP_BACKEND_API_URL}/register`;
 
   function loginOrRegister() {
     let apiUrl;

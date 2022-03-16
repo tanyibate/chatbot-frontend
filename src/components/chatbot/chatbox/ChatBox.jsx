@@ -30,7 +30,7 @@ export default function ChatBox({ chatBotActive }) {
   ]); /* scroll to the bottom of chat history so newest message will always be in display  
   when chat history is updated
 */
-  const responseAPI = "http://localhost:4000/response"; // chatbot api url
+  const responseAPI = `${process.env.REACT_APP_BACKEND_API_URL}/response`; // chatbot api url
   const getResponse = (message) => {
     console.log("arrived");
     setIsTyping(true);

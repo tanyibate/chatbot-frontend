@@ -39,7 +39,8 @@
   flex-direction: column;
   justify-content: center;
   height: 700px;
-  width: 1200px;
+  width: 80%;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -75,12 +76,13 @@
 }
 
 .locations {
-  height: 500px;
-  width: 1200px;
+  min-height: 500px;
+  width: 100%;
   background-image: url("./assets/images/img-locations-background.jpg");
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0;
+  padding-bottom: 20px;
 }
 .locations h2 {
   padding-top: 80px;
@@ -90,7 +92,9 @@
 }
 
 .locations .location {
+  row-gap: 10px;
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   justify-content: center;
 }
