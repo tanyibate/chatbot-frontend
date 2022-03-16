@@ -1,6 +1,7 @@
 .chatbox {
   height: 640px;
-  width: 410px;
+  max-width: 410px;
+  width: 95%;
   overflow: clip;
   box-sizing: border-box;
   background-color: white;

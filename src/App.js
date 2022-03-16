@@ -20,16 +20,14 @@ function App() {
           <p>
             <a href="#location">Locations</a>
           </p>
-          <p>
-            <a
-              onClick={() => {
-                setModal(true);
-              }}
-              style={{ cursor: "pointer" }}
-              href="#"
-            >
-              Log In
-            </a>
+          <p
+            onClick={() => {
+              setModal(true);
+            }}
+            style={{ cursor: "pointer" }}
+            href="#"
+          >
+            Log In
           </p>
         </div>
       </div>

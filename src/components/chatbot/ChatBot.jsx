@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import styles from "./chatbot-styles.module.scss";
 import ChatBox from "./chatbox/ChatBox";
-import cx from "classnames";
 export default function ChatBot() {
   const [chatBotActive, setChatBotActive] = useState(false); // to activate/disable chatbot
   return (
