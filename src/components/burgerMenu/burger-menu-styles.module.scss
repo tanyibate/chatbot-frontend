@@ -1,0 +1,42 @@
+.burger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 30px;
+  width: 40px;
+  cursor: pointer;
+  span {
+    height: 5px;
+    width: 100%;
+    background-color: seashell;
+  }
+}
+
+.menu {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  background-color: black;
+  color: seashell;
+  padding-top: 50px;
+  padding-left: 50px;
+  .close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    p {
+      text-decoration: none;
+    }
+  }
+  a {
+    display: block;
+    text-decoration: underline;
+    padding: 10px;
+    &:visited {
+      text-decoration-color: seashell;
+      color: seashell;
+    }
+  }
+}
