@@ -1,19 +1,16 @@
 import ChatBot from "./components/chatbot/ChatBot";
-import LoginModal from "./components/login-modal/LoginModal";
 import "./App.scss";
 import React, { useState } from "react";
 import { useMediaQuery } from "react-responsive";
 import BurgerMenu from "./components/burgerMenu/BurgerMenu";
 
 function App() {
-  const [modal, setModal] = useState(false);
   const [burgerMenuActive, setBurgerMenuActive] = useState(false);
   const isDesktopOrLaptop = useMediaQuery({
     query: "(min-width: 1024px)",
   });
   return (
     <div className="App">
-      {modal && <LoginModal setModal={setModal} />}
       <div className="header">
         <img src="images/img-tea-cozy-logo.png" alt="" />
         <div className="nav">
@@ -28,15 +25,6 @@ function App() {
               <p>
                 <a href="#location">Locations</a>
               </p>
-              <p
-                onClick={() => {
-                  setModal(true);
-                }}
-                style={{ cursor: "pointer" }}
-                href="#"
-              >
-                Log In
-              </p>
             </>
           )}
           {!isDesktopOrLaptop && (
@@ -44,7 +32,6 @@ function App() {
               {...{
                 setBurgerMenuActive: setBurgerMenuActive,
                 burgerMenuActive: burgerMenuActive,
-                setModalActive: setModal,
               }}
             />
           )}

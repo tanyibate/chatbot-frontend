@@ -13,7 +13,6 @@ export default function ChatBoxFooter(props) {
     */
     if (newMessage) {
       let oldHistory = props.chatHistory;
-      console.log(oldHistory);
       let newHistory = oldHistory.concat([
         {
           type: "user",

@@ -1,11 +1,7 @@
 import React from "react";
 import styles from "./burger-menu-styles.module.scss";
 
-export default function BurgerMenu({
-  burgerMenuActive,
-  setBurgerMenuActive,
-  setModalActive,
-}) {
+export default function BurgerMenu({ burgerMenuActive, setBurgerMenuActive }) {
   return (
     <>
       <div className={styles.burger} onClick={() => setBurgerMenuActive(true)}>
@@ -29,14 +25,6 @@ export default function BurgerMenu({
           </a>
           <a href="#location" onClick={() => setBurgerMenuActive(false)}>
             Location
-          </a>
-          <a
-            onClick={() => {
-              setBurgerMenuActive(false);
-              setModalActive(true);
-            }}
-          >
-            Log in
           </a>
         </div>
       )}
